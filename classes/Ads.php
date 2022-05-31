@@ -1,6 +1,6 @@
 <?php
 
-namespace Ads;
+namespace Classes;
 
 require_once('Interfaces/AdsInterface.php');
 

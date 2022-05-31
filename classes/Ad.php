@@ -1,6 +1,6 @@
 <?php
 
-namespace Ad;
+namespace Classes;
 
 class Ad
 {
