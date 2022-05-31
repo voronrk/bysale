@@ -5,6 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bulma.min.css">
-    <title>Сервис бесплатных объявлений</title>
+    <title>BySale - cервис бесплатных объявлений</title>
 </head>
 <body>

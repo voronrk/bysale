@@ -1,9 +1,8 @@
 <?php
-require_once('classes/Ads.php');
 
 use Ads\Ads;
 
-$dataForCards = Ads::getLast();
+$dataForCards = Ads::getAll();
 
 foreach($dataForCards as $dataForCard) 
 {
