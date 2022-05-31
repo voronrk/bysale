@@ -2,7 +2,11 @@
 
 namespace Ads;
 
-class Ads
+require_once('Interfaces/AdsInterface.php');
+
+use Interfaces\AdsInterface;
+
+class Ads implements AdsInterface
 {
 
     static $data = [
@@ -67,22 +71,22 @@ class Ads
         return self::$data;
     }
 
-    public static function getById($id) 
+    public static function getById($id): array
     {
         return static::getByKey('id', $id);
     }
 
-    public static function getAllById($id) 
+    public static function getAllById($id): array
     {
         return static::getAllByKey('id', $id);
     }
 
-    public static function getByKey($key, $value) 
+    public static function getByKey($key, $value): array 
     {
         return current(array_filter(static::$data, function($item) use ($key, $value) {return $item[$key]==$value;}));
     }
 
-    public static function getAllByKey($key, $value) 
+    public static function getAllByKey($key, $value):array
     {
         return array_filter(static::$data, function($item) use ($key, $value) {return $item[$key]==$value;});
     }

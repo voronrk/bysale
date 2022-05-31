@@ -2,6 +2,7 @@
 
 require_once('classes/Ads.php');
 
+
 $adId = $_GET['ad'];
 
 include('templates/head.php');
